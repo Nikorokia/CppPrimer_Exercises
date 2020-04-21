@@ -5,6 +5,13 @@ I embarked on this journey primarily to learn **C++**, but with the added benefi
 
 As a bonus, I get to learn more about git!
 
+##### Bookmark
+```
+Currently: pg40, 1.4.2
+
+Chapters Complete: 0
+```
+
 ## Quick Reference Notes
 
 Compiling code on Unix:
