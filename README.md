@@ -1,7 +1,9 @@
-# C++ Primer Examples
+# C++ Primer Exercises
 My creations while reading through the book, _C++ Primer, 5th Edition (2012)_.
 
 I embarked on this journey primarily to learn **C++**, but with the added benefit of forcing myself to work through critical thinking challenges.  
+
+As a bonus, I get to learn more about git!
 
 ## Quick Reference Notes
 
