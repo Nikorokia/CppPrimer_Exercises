@@ -14,6 +14,8 @@ Chapters Complete: 0
 
 ## Quick Reference Notes
 
+##### Quick Compile
+
 Compiling code on Unix:
 ```
 $ g++ -o prog1 prog1.cpp
@@ -25,3 +27,17 @@ Compiling code with Microsoft Visual Studio 2010 compiler:
 [dir]> cl /EHsc prog1.cpp
 ```
 `/EHsc` turns on standard exception handling.
+
+##### End-of-File Keystroke
+
+Necessary when entering values for `std::cin`.  
+On Windows: `Ctrl`+`z`.  
+On Unix: `Ctrl`+`d`.  
+
+##### Passing in Input and Output Files
+
+Tired of entering info while testing?  
+Specify a file to read in from for iostream, and a file to dump output to!
+```
+$ prog1 <infile >outfile
+```
