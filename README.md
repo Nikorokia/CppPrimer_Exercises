@@ -7,7 +7,7 @@ As a bonus, I get to learn more about git!
 
 ##### Bookmark
 ```
-Currently: pg94, 2.4
+Currently: pg105, 2.5
 
 Chapters Complete: 1
 ```
@@ -47,7 +47,7 @@ $ prog1 <infile >outfile
 ##### References and Pointers
 
 Reference assignment and use:
-```
+``` c++
 int i = 42, j = 64;                     //standard integers
 int &ref_i = i;                         //reference now an alias for i
 ref_i = j;                              //i is now equal to j
@@ -55,7 +55,7 @@ std::cout << ref_i << " " << &ref_i;    //prints value of i, then address of i
 ```
 
 Pointer (re)assignment and use:  
-```
+``` c++
 int i = 0, j = 42;
 int *pt_a = &i;         //  star in declaration: pointer contains address of i
 *pt_a = j;              //  star to dereference: i now equals j (73)
@@ -69,3 +69,20 @@ void *pt_e = j;         //  pointer that can hold address of any type,
                         //      but type is unknown
 ```
 Except in declaration, **Star** for **value**, _no star_ for _reference_.  
+
+##### Constants
+``` c++
+int i = 0;
+const int j = 42;
+const int *pt_a = j;    //  low-level constant pointer: 
+                        //      address value can change
+                        //      can only point to const ints
+
+int *const pt_b = i;    //  top-level constant pointer:
+                        //      address value is permanant
+                        //      bound integer can change
+
+const int *const pt_c = j   //  pointer is both top-level and low-level constant
+```
+Low-level const pointers must be used for const objects,  
+but can be used for non-const objects.
