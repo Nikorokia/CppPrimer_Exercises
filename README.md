@@ -7,7 +7,7 @@ As a bonus, I get to learn more about git!
 
 ##### Bookmark
 ```
-Currently: pg105, 2.5
+Currently: pg116, Exercise Section 2.6.2
 
 Chapters Complete: 1
 ```
