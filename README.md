@@ -8,9 +8,9 @@ As a bonus, I get to learn more about git!
 
 ##### Bookmark
 ```
-Currently: pg116, Section 2.6.3
+Currently: pg122, Chapter 3
 
-Chapters Complete: 1
+Chapters Complete: 1, 2
 ```
 
 ## Quick Reference Notes
