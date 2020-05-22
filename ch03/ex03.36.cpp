@@ -3,16 +3,58 @@
 
 #include <iostream>
 #include <array>
+#include <vector>
+using std::cout;
+using std::endl;
+using std::string;
+using std::end;
 
-bool arr_equal_chk(int a[], int b[]) {
-    int *e = end(a);
+
+string transBool(bool v) {
+    if (v) return "true";
+    else return "false";
 }
 
 int main() {
-    int a1[5] = {5, 5, 5, 5, 5};
-    int a2[5] = {5, 5, 5, 5, 5};
-    int a3[5] = {5, 5, 5, 5, 4};
-    int a4[4] = {5, 5, 5, 5};
+    // arrays
+    int a1[] = {5, 5, 5, 5, 5};
+    int a2[] = {5, 5, 5, 5, 4};
 
-    arr_equal_chk(a1, a2);
+    // compare arrays
+    bool equal = true;
+
+    if ( (end(a1) - a1) != (end(a2) - a2) )
+        equal = false;
+    else
+        for(auto *pa = a1, *pb = a2; 
+            pa != end(a1) && pb != end(a2);
+            pa++, pb++)
+                if (*pa != *pb)
+                    equal = false;
+
+    cout << "[ ";
+    for (auto e : a1) cout << e << " ";
+    cout << "] equals [ ";
+    for (auto e : a2) cout << e << " ";
+    cout << "]: " << transBool(equal) << endl;
+
+
+    // vectors
+    std::vector<int> v1 = {5, 5, 5, 5, 5};
+    std::vector<int> v2 = {5, 5, 5, 5, 4};
+
+    // comparing vectors
+    equal = true;
+    if (v1.size() != v2.size()) equal = false;
+    for (auto i1 = v1.begin(), i2 = v2.begin();
+         i1 != v1.end() && i2 != v2.end();
+         i1++, i2++)
+            if (*i1 != *i2)
+                equal = false;
+
+    cout << "{ ";
+    for (auto e : v1) cout << e << " ";
+    cout << "} equals { ";
+    for (auto e : v2) cout << e << " ";
+    cout << "}: " << transBool(equal) << endl;
 }
