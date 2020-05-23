@@ -8,7 +8,7 @@ As a bonus, I get to learn more about git!
 
 ##### Bookmark
 ```
-Currently: pg174, 3.5.4
+Currently: pg177, 3.5.5
 
 Chapters Complete: 1, 2
 ```
